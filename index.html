@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MA Construction Bomai Zaingair | Builders & Contractors, Sopore Kashmir</title>
+<meta name="description" content="MA Construction Bomai Zaingair — trusted builders and contractors in Sopore, Kashmir. New house construction, renovation, RCC work, plastering, tiling, painting, roofing and boundary walls. Request a free site quote.">
+<link rel="icon" href="assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15130f;
+    --ink-2:#1c1a15;
+    --ink-3:#242019;
+    --paper:#f6f2e8;
+    --paper-dim:#e9e2d2;
+    --gold:#c79a44;
+    --gold-bright:#e0b968;
+    --gold-deep:#8f6b26;
+    --stone:#8a8577;
+    --stone-line:rgba(199,154,68,0.28);
+    --brick:#8a4a30;
+    --ok:#5c7a52;
+    --err:#a4402f;
+    --radius:3px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    margin:0 0 .5em;
+    font-weight:600;
+    color:var(--paper);
+  }
+  .mono{font-family:'Space Mono',monospace;}
+  a{color:var(--gold-bright);}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{padding:88px 0;}
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block;}
+  .lead{color:var(--stone);max-width:620px;font-size:17px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Space Mono',monospace;
+    font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+    padding:14px 26px;border-radius:var(--radius);
+    border:1px solid var(--gold);
+    background:transparent;color:var(--gold-bright);
+    cursor:pointer;text-decoration:none;transition:.2s ease;
+  }
+  .btn:hover{background:var(--gold);color:var(--ink);}
+  .btn.solid{background:var(--gold);color:var(--ink);}
+  .btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright);}
+  .btn.ghost{border-color:rgba(246,242,232,0.35);color:var(--paper);}
+  .btn.ghost:hover{background:rgba(246,242,232,0.08);color:var(--paper);}
+  .btn.wa{border-color:#3fae57;color:#7fdc93;}
+  .btn.wa:hover{background:#2f8f42;color:#fff;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(21,19,15,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--stone-line);
+  }
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .brand img{height:44px;width:44px;object-fit:contain;}
+  .brand-txt{line-height:1.15;}
+  .brand-txt .n1{font-family:'Oswald',sans-serif;font-size:16px;letter-spacing:.05em;color:var(--paper);font-weight:600;}
+  .brand-txt .n2{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.16em;color:var(--gold);}
+  .navlinks{display:flex;align-items:center;gap:28px;}
+  .navlinks a{
+    color:var(--paper);text-decoration:none;font-size:13px;
+    font-family:'Space Mono',monospace;letter-spacing:.04em;text-transform:uppercase;
+    opacity:.85;
+  }
+  .navlinks a:hover{opacity:1;color:var(--gold-bright);}
+  .navlinks a.cta{border:1px solid var(--gold);padding:9px 16px;border-radius:var(--radius);color:var(--gold-bright);}
+  .navlinks a.cta:hover{background:var(--gold);color:var(--ink);}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px;}
+  .burger span{width:24px;height:2px;background:var(--paper);display:block;}
+
+  /* HERO */
+  .hero{
+    position:relative;min-height:88vh;display:flex;align-items:flex-end;
+    background:url('assets/images/gallery-05-villa-night.jpg') center/cover no-repeat;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(15,13,10,.55) 0%, rgba(15,13,10,.55) 30%, rgba(15,13,10,.96) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;padding-bottom:70px;width:100%;}
+  .hero h1{font-size:clamp(34px,6vw,64px);line-height:1.02;margin-bottom:14px;}
+  .hero h1 span{color:var(--gold-bright);}
+  .hero .tagline{font-family:'Space Mono',monospace;color:var(--gold);letter-spacing:.1em;font-size:14px;margin-bottom:22px;text-transform:uppercase;}
+  .hero p.lead{color:#d8d3c4;font-size:18px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+  .hero-meta{
+    margin-top:46px;display:flex;gap:36px;flex-wrap:wrap;
+    border-top:1px solid var(--stone-line);padding-top:22px;
+  }
+  .hero-meta div{font-family:'Space Mono',monospace;font-size:12px;color:var(--stone);}
+  .hero-meta div b{display:block;color:var(--paper);font-family:'Inter',sans-serif;font-size:14px;font-weight:600;}
+
+  /* BLUEPRINT DIVIDER (signature element) */
+  .blueprint{
+    display:flex;align-items:center;gap:14px;
+    padding:26px 0;
+    color:var(--gold);
+  }
+  .blueprint .wrap{display:flex;align-items:center;width:100%;gap:14px;}
+  .blueprint .tick{width:1px;height:12px;background:var(--gold);opacity:.6;}
+  .blueprint .line{flex:1;height:1px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px, transparent 6px 12px);opacity:.55;}
+  .blueprint .label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;color:var(--gold);}
+
+  /* TRUST STRIP */
+  .trust{background:var(--ink-2);border-top:1px solid var(--stone-line);border-bottom:1px solid var(--stone-line);}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+  .trust .item{padding:26px 20px;border-left:1px solid var(--stone-line);text-align:left;}
+  .trust .item:first-child{border-left:0;}
+  .trust .item h4{font-size:14px;margin-bottom:6px;color:var(--gold-bright);}
+  .trust .item p{margin:0;font-size:13px;color:var(--stone);}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;}
+  .about-photo{position:relative;border:1px solid var(--stone-line);padding:10px;}
+  .about-photo img{width:100%;}
+  .about-photo .tag{
+    position:absolute;bottom:24px;left:24px;background:var(--ink);
+    border:1px solid var(--gold);padding:10px 16px;font-family:'Space Mono',monospace;
+    font-size:12px;color:var(--gold-bright);letter-spacing:.05em;
+  }
+  .signature-block{margin-top:26px;padding-top:22px;border-top:1px solid var(--stone-line);}
+  .signature-block .name{font-family:'Oswald',sans-serif;font-size:19px;letter-spacing:.03em;color:var(--paper);}
+  .signature-block .role{font-family:'Space Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+  .about-points{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:16px;}
+  .about-points li{display:flex;gap:12px;font-size:15px;color:#d8d3c4;}
+  .about-points li .dot{width:6px;height:6px;background:var(--gold);margin-top:8px;flex:none;}
+
+  /* SERVICES */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--stone-line);border:1px solid var(--stone-line);margin-top:44px;}
+  .svc{background:var(--ink);padding:34px 28px;transition:.2s;}
+  .svc:hover{background:var(--ink-2);}
+  .svc .ico{width:40px;height:40px;margin-bottom:18px;color:var(--gold-bright);}
+  .svc h3{font-size:17px;margin-bottom:8px;}
+  .svc p{color:var(--stone);font-size:14px;margin:0;}
+
+  /* GALLERY / JOURNEY */
+  .journey{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:50px;position:relative;}
+  .journey::before{content:"";position:absolute;top:60px;left:0;right:0;height:1px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px, transparent 6px 12px);opacity:.5;z-index:0;}
+  .jstep{position:relative;padding:0 14px;text-align:center;z-index:1;}
+  .jstep .num{width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid var(--gold);margin:52px auto 18px;}
+  .jstep img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--stone-line);}
+  .jstep .lbl{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:14px;}
+  .jstep .sub{font-size:12.5px;color:var(--stone);margin-top:4px;}
+
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;}
+  .gitem{position:relative;overflow:hidden;border:1px solid var(--stone-line);cursor:pointer;aspect-ratio:4/3;}
+  .gitem img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .gitem:hover img{transform:scale(1.06);}
+  .gitem .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--paper);}
+  .gallery-note{margin-top:20px;color:var(--stone);font-size:13px;}
+
+  .lightbox{position:fixed;inset:0;background:rgba(10,9,7,.94);z-index:999;display:none;align-items:center;justify-content:center;padding:40px;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(1100px,92vw);max-height:86vh;border:1px solid var(--gold);}
+  .lightbox .close{position:absolute;top:24px;right:32px;background:none;border:1px solid var(--paper);color:var(--paper);width:40px;height:40px;font-size:20px;cursor:pointer;}
+
+  /* TESTIMONIALS */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+  .testi{background:var(--ink-2);border:1px solid var(--stone-line);padding:28px;}
+  .testi .stars{color:var(--gold);font-family:'Space Mono',monospace;font-size:14px;margin-bottom:14px;letter-spacing:.14em;}
+  .testi p{color:#d8d3c4;font-size:14.5px;margin:0 0 18px;}
+  .testi .who{font-family:'Space Mono',monospace;font-size:12px;color:var(--gold-bright);}
+  .testi .who span{color:var(--stone);}
+
+  /* FORM SECTION */
+  .quote{background:var(--paper);color:var(--ink);}
+  .quote .eyebrow{color:var(--brick);}
+  .quote .eyebrow::before{background:var(--brick);}
+  .quote h2,.quote h3{color:var(--ink);}
+  .quote .lead{color:#4d493e;}
+  .form-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;margin-top:44px;align-items:start;}
+  .form-side h3{font-size:18px;}
+  .form-side ul{list-style:none;padding:0;margin:20px 0;display:grid;gap:14px;}
+  .form-side ul li{display:flex;gap:10px;font-size:14px;color:#4d493e;}
+  .form-side ul li .dot{width:6px;height:6px;background:var(--brick);margin-top:8px;flex:none;}
+  .form-side .quickcall{margin-top:30px;padding:20px;background:var(--paper-dim);border:1px solid #ddd3ba;}
+  .form-side .quickcall .mono{font-size:13px;color:#6b6656;}
+  .form-side .quickcall .num{font-family:'Oswald',sans-serif;font-size:22px;color:var(--brick);margin-top:6px;}
+
+  form#leadForm{background:#fff;border:1px solid #e2d9bf;padding:34px;}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .fgroup{margin-bottom:18px;}
+  .fgroup.full{grid-column:1/-1;}
+  label{display:block;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#6b6656;margin-bottom:7px;}
+  input[type=text],input[type=tel],input[type=email],input[type=date],select,textarea{
+    width:100%;padding:12px 13px;border:1px solid #d6cbac;background:#fbf9f3;
+    font-family:'Inter',sans-serif;font-size:14.5px;color:var(--ink);border-radius:2px;
+  }
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--gold-deep);outline-offset:1px;border-color:var(--gold-deep);}
+  textarea{resize:vertical;min-height:90px;}
+  .checkline{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+  .chip{
+    font-family:'Space Mono',monospace;font-size:12.5px;padding:8px 12px;border:1px solid #d6cbac;
+    background:#fbf9f3;cursor:pointer;user-select:none;
+  }
+  .chip.active{background:var(--brick);color:#fff;border-color:var(--brick);}
+  .filebox{border:1.5px dashed #c9bd9a;background:#fbf9f3;padding:20px;text-align:center;cursor:pointer;}
+  .filebox:hover{border-color:var(--brick);}
+  .filebox input{display:none;}
+  .filebox .hint{font-size:12.5px;color:#8a836b;margin-top:6px;}
+  .file-preview{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+  .file-preview .fp{width:74px;height:74px;position:relative;border:1px solid #d6cbac;overflow:hidden;}
+  .file-preview .fp img{width:100%;height:100%;object-fit:cover;}
+  .file-preview .fp span{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.65);color:#fff;font-size:10px;width:16px;height:16px;line-height:16px;text-align:center;cursor:pointer;}
+  .submit-row{display:flex;gap:14px;align-items:center;margin-top:8px;flex-wrap:wrap;}
+  .form-status{margin-top:16px;font-size:13.5px;padding:12px 14px;display:none;font-family:'Space Mono',monospace;}
+  .form-status.show{display:block;}
+  .form-status.ok{background:#e7efe1;color:#3f5636;border:1px solid #b9d1a8;}
+  .form-status.err{background:#f5e2dd;color:#7a3223;border:1px solid #e0b3a4;}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .cinfo{display:grid;gap:22px;margin-top:36px;}
+  .cinfo .row{display:flex;gap:16px;align-items:flex-start;}
+  .cinfo .ico{width:22px;height:22px;color:var(--gold-bright);flex:none;margin-top:2px;}
+  .cinfo .row h4{font-size:13px;margin-bottom:4px;color:var(--gold-bright);letter-spacing:.08em;}
+  .cinfo .row p{margin:0;color:#d8d3c4;font-size:14.5px;}
+  .cinfo .row a{color:#d8d3c4;text-decoration:none;}
+  .cinfo .row a:hover{color:var(--gold-bright);}
+  .social-row{display:flex;gap:12px;margin-top:26px;}
+  .social-row a{
+    width:42px;height:42px;border:1px solid var(--stone-line);display:flex;align-items:center;justify-content:center;
+    color:var(--gold-bright);text-decoration:none;
+  }
+  .social-row a:hover{border-color:var(--gold);background:rgba(199,154,68,.1);}
+  .mapbox{border:1px solid var(--stone-line);overflow:hidden;height:100%;min-height:340px;}
+  .mapbox iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.2) contrast(1.05);}
+
+  /* FOOTER */
+  footer{background:var(--ink-2);border-top:1px solid var(--stone-line);padding:44px 0 24px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;}
+  .foot-brand{display:flex;gap:12px;align-items:center;margin-bottom:14px;}
+  .foot-brand img{height:38px;width:38px;object-fit:contain;}
+  .foot-brand .n1{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;}
+  footer p{color:var(--stone);font-size:13.5px;max-width:320px;}
+  footer h4{font-size:12px;letter-spacing:.12em;color:var(--gold);margin-bottom:14px;}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+  footer ul a{color:#c9c4b4;text-decoration:none;font-size:14px;}
+  footer ul a:hover{color:var(--gold-bright);}
+  .foot-bottom{margin-top:38px;padding-top:20px;border-top:1px solid var(--stone-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:var(--stone);font-family:'Space Mono',monospace;}
+  .foot-bottom button{background:none;border:0;color:var(--stone);font-family:'Space Mono',monospace;font-size:12.5px;cursor:pointer;text-decoration:underline;padding:0;}
+
+  /* WHATSAPP FLOAT */
+  .wa-float{
+    position:fixed;bottom:22px;right:22px;z-index:200;
+    width:58px;height:58px;border-radius:50%;background:#25D366;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.4);
+    text-decoration:none;
+  }
+  .wa-float svg{width:28px;height:28px;fill:#fff;}
+
+  /* ADMIN MODAL */
+  .modal-overlay{position:fixed;inset:0;background:rgba(10,9,7,.85);z-index:999;display:none;align-items:center;justify-content:center;padding:20px;}
+  .modal-overlay.open{display:flex;}
+  .modal{background:var(--paper);color:var(--ink);max-width:960px;width:100%;max-height:88vh;overflow:auto;padding:0;border:1px solid var(--gold);}
+  .modal-head{position:sticky;top:0;background:var(--ink);color:var(--paper);padding:18px 26px;display:flex;justify-content:space-between;align-items:center;}
+  .modal-head h3{margin:0;color:var(--paper);font-size:16px;}
+  .modal-head button{background:none;border:1px solid var(--paper);color:var(--paper);width:32px;height:32px;cursor:pointer;}
+  .modal-body{padding:26px;}
+  .login-box{max-width:320px;margin:0 auto;text-align:center;padding:40px 0;}
+  .login-box input{margin-bottom:14px;text-align:center;}
+  .lead-card{border:1px solid #ddd3ba;background:#fff;padding:18px 20px;margin-bottom:14px;}
+  .lead-card .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px;}
+  .lead-card .top b{font-family:'Oswald',sans-serif;font-size:16px;}
+  .lead-card .top span{font-family:'Space Mono',monospace;font-size:11.5px;color:#8a836b;}
+  .lead-card .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;font-size:13.5px;margin-bottom:10px;}
+  .lead-card .grid2 div b{color:#6b6656;font-weight:600;display:inline-block;min-width:120px;font-family:'Space Mono',monospace;font-size:11px;text-transform:uppercase;}
+  .lead-card .notes{font-size:13.5px;background:#fbf9f3;padding:10px 12px;border-left:2px solid var(--brick);margin-bottom:10px;}
+  .lead-card .photos{display:flex;gap:8px;flex-wrap:wrap;}
+  .lead-card .photos img{width:64px;height:64px;object-fit:cover;border:1px solid #d6cbac;cursor:pointer;}
+  .lead-card .actions{margin-top:12px;display:flex;gap:10px;}
+  .lead-card .actions button{font-family:'Space Mono',monospace;font-size:11.5px;border:1px solid #c9bd9a;background:#fbf9f3;padding:7px 12px;cursor:pointer;}
+  .lead-card .actions button.del{color:var(--err);border-color:var(--err);}
+  .admin-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
+  .admin-toolbar .btn{padding:9px 16px;}
+  .empty-note{text-align:center;padding:40px 0;color:#8a836b;font-family:'Space Mono',monospace;font-size:13px;}
+
+  @media (max-width: 900px){
+    .navlinks{position:fixed;top:69px;left:0;right:0;background:var(--ink);flex-direction:column;padding:20px 24px;gap:18px;border-bottom:1px solid var(--stone-line);display:none;}
+    .navlinks.open{display:flex;}
+    .burger{display:flex;}
+    .about-grid,.form-wrap,.contact-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .journey{grid-template-columns:repeat(2,1fr);row-gap:40px;}
+    .journey::before{display:none;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+    .testi-grid{grid-template-columns:1fr;}
+    .trust .wrap{grid-template-columns:repeat(2,1fr);}
+    .trust .item:nth-child(3){border-left:0;}
+    .foot-grid{grid-template-columns:1fr;}
+    .frow{grid-template-columns:1fr;}
+  }
+  @media (max-width:520px){
+    .services-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:1fr;}
+    .journey{grid-template-columns:1fr;}
+    section{padding:64px 0;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .gitem img{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#home" class="brand">
+      <img src="assets/images/logo.png" alt="MA Construction logo">
+      <div class="brand-txt">
+        <div class="n1">MA CONSTRUCTION</div>
+        <div class="n2">BOMAI ZAINGAIR</div>
+      </div>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="navlinks" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="cta">Get a Quote</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HOME / HERO -->
+<section id="home" class="hero" style="padding:0;">
+  <div class="wrap hero-inner">
+    <div class="tagline">Builders &amp; Contractors · Sopore, Kashmir</div>
+    <h1>We Build<br><span>Your Dreams.</span></h1>
+    <p class="lead">MA Construction Bomai Zaingair plans, builds and finishes homes and commercial buildings across Sopore and the surrounding valley &mdash; under the direct supervision of contractor Mushtaq Ahmad Lone, from foundation to handover.</p>
+    <div class="hero-actions">
+      <a href="#quote" class="btn solid">Request a Site Visit</a>
+      <a href="tel:+918082168771" class="btn ghost">Call +91 80821 68771</a>
+      <a href="https://wa.me/918082168771" target="_blank" rel="noopener" class="btn wa">WhatsApp Us</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>New House Construction</b>Design to handover</div>
+      <div><b>RCC &amp; Civil Work</b>Foundation, columns, slabs</div>
+      <div><b>Finishing Work</b>Plaster, tiling, painting, roofing</div>
+      <div><b>Owner Supervised</b>Every site, every stage</div>
+    </div>
+  </div>
+</section>
+
+<div class="blueprint"><div class="wrap"><span class="tick"></span><span class="line"></span><span class="label">Bomai Zaingair &middot; Sopore &middot; Jammu &amp; Kashmir</span><span class="line"></span><span class="tick"></span></div></div>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><h4>Local &amp; Reachable</h4><p>Based in Bomai Zaingair, Sopore &mdash; on call for every client in the valley.</p></div>
+    <div class="item"><h4>Owner-Supervised Sites</h4><p>Mushtaq Ahmad Lone personally oversees every project stage.</p></div>
+    <div class="item"><h4>Complete Scope</h4><p>Structure, RCC, plaster, tiling, painting and roofing under one contractor.</p></div>
+    <div class="item"><h4>Clear Estimates</h4><p>Transparent, written estimates before any work begins.</p></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="assets/images/gallery-01-villa-day.jpg" alt="Completed villa project by MA Construction in Sopore">
+        <div class="tag mono">Completed Project — Sopore</div>
+      </div>
+      <div>
+        <div class="eyebrow">About Us</div>
+        <h2>A local contractor, built on trust</h2>
+        <p class="lead">MA Construction Bomai Zaingair is a builders &amp; contracting company serving Sopore and the surrounding areas of Kashmir. We take on residential and commercial construction from the first foundation trench to the final coat of paint, keeping every client informed at every stage of the build.</p>
+        <ul class="about-points">
+          <li><span class="dot"></span>Direct communication with the contractor — no layers, no confusion.</li>
+          <li><span class="dot"></span>Skilled mason, plumbing, electrical and finishing teams working under one roof.</li>
+          <li><span class="dot"></span>Material quality and site progress you can inspect at any time.</li>
+          <li><span class="dot"></span>Work planned around your budget, your timeline and your land.</li>
+        </ul>
+        <div class="signature-block">
+          <div class="name">Mushtaq Ahmad Lone</div>
+          <div class="role">Contractor &amp; Founder — MA Construction Bomai Zaingair</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="blueprint"><div class="wrap"><span class="tick"></span><span class="line"></span><span class="label">What We Build</span><span class="line"></span><span class="tick"></span></div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">Our Services</div>
+    <h2>From foundation to finishing</h2>
+    <p class="lead">Every service required to take a plot of land to a completed, livable building — handled by one contracting team.</p>
+    <div class="services-grid">
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+        <h3>New House Construction</h3>
+        <p>Complete home builds from layout and foundation to roofing and handover.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3l7 7-8 8-7-7z"/><path d="M6 15l-3 6 6-3"/><path d="M12 8l4 4"/></svg>
+        <h3>Renovation &amp; Remodeling</h3>
+        <p>Upgrading older homes — structural repair, new layouts, modern finishes.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="8" width="6" height="13"/><rect x="14" y="3" width="6" height="18"/><path d="M4 12h6M14 8h6M14 13h6"/></svg>
+        <h3>Commercial Buildings</h3>
+        <p>Shops, showrooms and small commercial sites built to a working schedule.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/><path d="M4 9h16"/></svg>
+        <h3>RCC Work</h3>
+        <p>Foundations, columns, beams and slabs — reinforced concrete done to spec.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg>
+        <h3>Plastering</h3>
+        <p>Smooth, even internal and external plaster work prepared for finishing.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+        <h3>Tiling &amp; Flooring</h3>
+        <p>Floor and wall tiling for kitchens, bathrooms, living areas and courtyards.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21c3-1 4-3 4-5 2 0 4-1 5-3l7-7-3-3-7 7c-2 1-3 3-3 5-2 0-4 1-5 4z"/><path d="M15 5l4 4"/></svg>
+        <h3>Painting</h3>
+        <p>Interior and exterior painting with weather-resistant finishes for Kashmir's climate.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 10l10-6 10 6"/><path d="M4 10v3M8 10v3M12 10v3M16 10v3M20 10v3"/><path d="M2 13h20"/></svg>
+        <h3>Roofing</h3>
+        <p>Sloped and tiled roofing systems built for heavy snow and rain loads.</p>
+      </div>
+
+      <div class="svc">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="10" width="4" height="9"/><rect x="8" y="7" width="4" height="12"/><rect x="14" y="10" width="4" height="9"/><rect x="20" y="4" width="2" height="15"/><path d="M2 19h20"/></svg>
+        <h3>Boundary Wall</h3>
+        <p>Compound and boundary walls in brick and block, built to secure your plot.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="blueprint"><div class="wrap"><span class="tick"></span><span class="line"></span><span class="label">Build Journey</span><span class="line"></span><span class="tick"></span></div></div>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">Projects &amp; Gallery</div>
+    <h2>Foundation to handover</h2>
+    <p class="lead">A recent residential build in Sopore, from brickwork to the finished, lit-up home.</p>
+
+    <div class="journey">
+      <div class="jstep">
+        <div class="num"></div>
+        <img src="assets/images/gallery-04-brickwork.jpg" alt="Brickwork stage of construction">
+        <div class="lbl">Foundation &amp; Brickwork</div>
+        <div class="sub">Walls raised course by course</div>
+      </div>
+      <div class="jstep">
+        <div class="num"></div>
+        <img src="assets/images/gallery-02-under-construction.jpg" alt="Structure under construction with roofing frame">
+        <div class="lbl">Structure &amp; Roofing</div>
+        <div class="sub">Frame, slab and roof takes shape</div>
+      </div>
+      <div class="jstep">
+        <div class="num"></div>
+        <img src="assets/images/gallery-06-villa-night2.jpg" alt="Finishing stage with windows and doors fitted">
+        <div class="lbl">Finishing</div>
+        <div class="sub">Windows, doors, plaster and paint</div>
+      </div>
+      <div class="jstep">
+        <div class="num"></div>
+        <img src="assets/images/gallery-01-villa-day.jpg" alt="Completed handed-over villa">
+        <div class="lbl">Handover</div>
+        <div class="sub">Ready to move in</div>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-01-villa-day.jpg')"><img src="assets/images/gallery-01-villa-day.jpg" alt="Completed villa, day view"><div class="cap">Completed Villa — Sopore</div></div>
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-03-villa-dusk.jpg')"><img src="assets/images/gallery-03-villa-dusk.jpg" alt="Completed villa at dusk"><div class="cap">Handover — Evening View</div></div>
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-05-villa-night.jpg')"><img src="assets/images/gallery-05-villa-night.jpg" alt="Villa lit up at night"><div class="cap">Finishing Stage — Night</div></div>
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-06-villa-night2.jpg')"><img src="assets/images/gallery-06-villa-night2.jpg" alt="Villa exterior finishing"><div class="cap">Exterior Finishing</div></div>
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-02-under-construction.jpg')"><img src="assets/images/gallery-02-under-construction.jpg" alt="House under construction"><div class="cap">Under Construction</div></div>
+      <div class="gitem" onclick="openLightbox('assets/images/gallery-04-brickwork.jpg')"><img src="assets/images/gallery-04-brickwork.jpg" alt="Brickwork on site"><div class="cap">Site Brickwork</div></div>
+    </div>
+    <p class="gallery-note">More project photos will be added here regularly. See the note in the delivered files for how to add new photos yourself.</p>
+  </div>
+</section>
+
+<div class="blueprint"><div class="wrap"><span class="tick"></span><span class="line"></span><span class="label">Client Feedback</span><span class="line"></span><span class="tick"></span></div></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow">Testimonials</div>
+    <h2>What clients say</h2>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Our house in Sopore was completed on the timeline we agreed on. Mushtaq sahab checked the site personally almost every day, which gave us a lot of confidence in the work."</p>
+        <div class="who">Bilal A. <span>— New House, Sopore</span></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"We got the boundary wall and plastering done together. Clean brickwork and the team explained every cost before starting, no surprises later."</p>
+        <div class="who">Rafiqa M. <span>— Boundary Wall &amp; Plastering</span></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Renovated our old kitchen and bathroom with new tiling and painting. Good quality material and the site was kept tidy throughout the work."</p>
+        <div class="who">Nasir H. <span>— Renovation, Bomai</span></div>
+      </div>
+    </div>
+    <p class="gallery-note">Sample reviews shown above — replace with your own clients' feedback as it comes in. See admin notes in the delivered files.</p>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote" class="quote">
+  <div class="wrap">
+    <div class="eyebrow">Customer Request Form</div>
+    <h2>Get a free site estimate</h2>
+    <p class="lead">Tell us about your project and we'll get back to you. Your request is saved on this device and sent to us directly on WhatsApp or email.</p>
+
+    <div class="form-wrap">
+      <div class="form-side">
+        <h3>How it works</h3>
+        <ul>
+          <li><span class="dot"></span>Fill in your details and the type of work you need.</li>
+          <li><span class="dot"></span>Attach site photos if you have them — optional but helpful.</li>
+          <li><span class="dot"></span>Submit — your request opens in WhatsApp or your email app to send to us instantly.</li>
+          <li><span class="dot"></span>We call or WhatsApp you back to schedule a free site visit.</li>
+        </ul>
+        <div class="quickcall">
+          <div class="mono">Prefer to talk directly?</div>
+          <div class="num">+91 80821 68771</div>
+          <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="tel:+918082168771" class="btn" style="padding:9px 14px;">Call Now</a>
+            <a href="https://wa.me/918082168771" target="_blank" rel="noopener" class="btn wa" style="padding:9px 14px;">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <form id="leadForm">
+        <div class="frow">
+          <div class="fgroup">
+            <label for="f_name">Full Name *</label>
+            <input type="text" id="f_name" required placeholder="Your name">
+          </div>
+          <div class="fgroup">
+            <label for="f_mobile">Mobile Number *</label>
+            <input type="tel" id="f_mobile" required placeholder="10-digit mobile number" pattern="[0-9+ ]{8,15}">
+          </div>
+        </div>
+
+        <div class="fgroup full">
+          <label for="f_address">Address / Location *</label>
+          <input type="text" id="f_address" required placeholder="Village / area, district">
+        </div>
+
+        <div class="fgroup full">
+          <label>Type of Construction Work *</label>
+          <div class="checkline" id="workChips">
+            <span class="chip" data-val="New House">New House</span>
+            <span class="chip" data-val="Renovation">Renovation</span>
+            <span class="chip" data-val="Commercial Building">Commercial Building</span>
+            <span class="chip" data-val="RCC Work">RCC Work</span>
+            <span class="chip" data-val="Plastering">Plastering</span>
+            <span class="chip" data-val="Tiling">Tiling</span>
+            <span class="chip" data-val="Painting">Painting</span>
+            <span class="chip" data-val="Roofing">Roofing</span>
+            <span class="chip" data-val="Boundary Wall">Boundary Wall</span>
+            <span class="chip" data-val="Other">Other</span>
+          </div>
+        </div>
+
+        <div class="frow">
+          <div class="fgroup">
+            <label for="f_plot">Plot Size (Optional)</label>
+            <input type="text" id="f_plot" placeholder="e.g. 5 Marla, 1200 sqft">
+          </div>
+          <div class="fgroup">
+            <label for="f_budget">Estimated Budget</label>
+            <input type="text" id="f_budget" placeholder="e.g. ₹8-10 Lakh">
+          </div>
+        </div>
+
+        <div class="fgroup full">
+          <label for="f_date">Preferred Start Date</label>
+          <input type="date" id="f_date">
+        </div>
+
+        <div class="fgroup full">
+          <label for="f_notes">Additional Requirements</label>
+          <textarea id="f_notes" placeholder="Describe your requirement in a few lines..."></textarea>
+        </div>
+
+        <div class="fgroup full">
+          <label>Upload Photos or Documents (Optional)</label>
+          <label class="filebox">
+            <input type="file" id="f_files" accept="image/*,.pdf" multiple>
+            <div class="mono" style="font-size:13px;">Tap to choose photos or files</div>
+            <div class="hint">You can select multiple images. Shown on this website's request record for our team.</div>
+          </label>
+          <div class="file-preview" id="filePreview"></div>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn solid">Submit Request</button>
+          <span class="mono" style="font-size:12px;color:#7a745f;">We'll reply within 24 hours</span>
+        </div>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact Us</div>
+    <h2>Talk to us about your project</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="lead">Reach out directly, or submit the request form above and we'll call you back to arrange a free site visit.</p>
+        <div class="cinfo">
+          <div class="row">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+            <div><h4>Phone</h4><p><a href="tel:+918082168771">+91 80821 68771</a></p></div>
+          </div>
+          <div class="row">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M12 18h.01"/></svg>
+            <div><h4>WhatsApp</h4><p><a href="https://wa.me/918082168771" target="_blank" rel="noopener">+91 80821 68771</a></p></div>
+          </div>
+          <div class="row">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+            <div><h4>Email</h4><p><a href="mailto:munaibmushtaq1313@gmail.com">munaibmushtaq1313@gmail.com</a></p></div>
+          </div>
+          <div class="row">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><h4>Address</h4><p>Near Masjid Noor, Chanpora, Bomai, Sopore, Jammu &amp; Kashmir</p></div>
+          </div>
+          <div class="row">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <div><h4>Working Hours</h4><p>Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM</p></div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/search/top?q=ma%20construction%20bomai%20zaingair" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook: MA Construction Bomai Zaingair">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3V7.7c0-.9.3-1.6 1.6-1.6h1.5V3.2C16.4 3.1 15.3 3 14 3c-2.7 0-4.5 1.6-4.5 4.6V9.8H7v3.2h2.5v8h4z"/></svg>
+          </a>
+          <a href="https://instagram.com/maconstructionbomaizaingair" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram: @maconstructionbomaizaingair">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <iframe src="https://www.google.com/maps?q=Masjid%20Noor%20Chanpora%20Bumai%20Sopore%20Jammu%20and%20Kashmir&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to MA Construction near Masjid Noor, Chanpora, Bomai, Sopore"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/images/logo.png" alt="MA Construction logo">
+          <div class="n1">MA CONSTRUCTION<br><span class="mono" style="font-size:10px;color:var(--gold);letter-spacing:.14em;">BOMAI ZAINGAIR</span></div>
+        </div>
+        <p>Builders &amp; contractors serving Sopore and the surrounding Kashmir valley — new construction, renovation and finishing work under one roof.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#gallery">Projects / Gallery</a></li>
+          <li><a href="#quote">Customer Request Form</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+918082168771">+91 80821 68771</a></li>
+          <li><a href="mailto:munaibmushtaq1313@gmail.com">munaibmushtaq1313@gmail.com</a></li>
+          <li>Near Masjid Noor, Chanpora,<br>Bomai, Sopore, J&amp;K</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> MA Construction Bomai Zaingair. All rights reserved.</span>
+      <button onclick="openAdmin()">Owner Login — View Saved Requests</button>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918082168771" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.696 4.61 1.897 6.481L4 29l7.72-1.858A11.93 11.93 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.9a9.86 9.86 0 0 1-5.03-1.377l-.36-.214-4.585 1.103 1.127-4.47-.235-.372A9.86 9.86 0 0 1 6.1 15c0-5.47 4.43-9.9 9.9-9.9s9.9 4.43 9.9 9.9-4.43 9.9-9.9 9.9zm5.44-7.41c-.298-.15-1.762-.87-2.036-.968-.273-.1-.472-.15-.67.15-.198.298-.767.968-.94 1.166-.174.198-.348.224-.646.075-.298-.15-1.258-.464-2.396-1.48-.886-.79-1.485-1.766-1.658-2.064-.174-.298-.019-.46.13-.61.134-.133.298-.348.447-.522.15-.174.198-.298.298-.497.1-.198.05-.372-.025-.522-.075-.15-.67-1.614-.918-2.21-.242-.58-.487-.502-.67-.512l-.57-.01c-.198 0-.522.075-.795.372-.273.298-1.04 1.016-1.04 2.48s1.065 2.876 1.213 3.074c.15.198 2.096 3.2 5.08 4.487.71.306 1.263.489 1.695.626.712.227 1.36.195 1.872.118.571-.085 1.762-.72 2.01-1.415.248-.695.248-1.29.174-1.415-.074-.124-.273-.198-.57-.348z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="close" onclick="closeLightbox(event)">&times;</button>
+  <img id="lightboxImg" src="" alt="Project photo enlarged">
+</div>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="adminOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>MA Construction — Saved Requests</h3>
+      <button onclick="closeAdmin()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="loginView" class="login-box">
+        <p class="mono" style="font-size:13px;color:#6b6656;margin-bottom:16px;">Enter the owner passcode to view saved customer requests from this device.</p>
+        <input type="text" id="adminPass" placeholder="Passcode">
+        <button class="btn solid" onclick="checkAdminPass()" style="width:100%;justify-content:center;">Unlock</button>
+        <p class="mono" style="font-size:11px;color:#a19a80;margin-top:14px;">Default passcode: MACON2026 — change it in index.html (search for ADMIN_PASSCODE).</p>
+      </div>
+      <div id="recordsView" style="display:none;">
+        <div class="admin-toolbar">
+          <span class="mono" id="recordCount" style="font-size:13px;color:#6b6656;"></span>
+          <div style="display:flex;gap:10px;">
+            <button class="btn" onclick="exportLeadsCSV()" style="padding:9px 14px;">Export CSV</button>
+            <button class="btn" onclick="exportLeadsJSON()" style="padding:9px 14px;">Export JSON</button>
+            <button class="btn ghost" onclick="clearAllLeads()" style="padding:9px 14px;border-color:#a4402f;color:#a4402f;">Clear All</button>
+          </div>
+        </div>
+        <div id="leadsList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---------- NAV ---------- */
+const burgerBtn = document.getElementById('burgerBtn');
+const navLinks = document.getElementById('navLinks');
+burgerBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+/* ---------- LIGHTBOX ---------- */
+function openLightbox(src){
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(e){
+  if(e.target.id === 'lightbox' || e.target.classList.contains('close')){
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+/* ---------- SERVICE CHIPS ---------- */
+const chipWrap = document.getElementById('workChips');
+let selectedWork = [];
+chipWrap.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.classList.toggle('active');
+    const val = chip.dataset.val;
+    if(chip.classList.contains('active')){ selectedWork.push(val); }
+    else { selectedWork = selectedWork.filter(v => v !== val); }
+  });
+});
+
+/* ---------- FILE UPLOAD (base64 preview + storage) ---------- */
+const fileInput = document.getElementById('f_files');
+const filePreview = document.getElementById('filePreview');
+let attachedFiles = []; // {name, dataUrl}
+
+fileInput.addEventListener('change', () => {
+  Array.from(fileInput.files).forEach(file => {
+    if(file.size > 4 * 1024 * 1024){
+      alert(file.name + ' is larger than 4MB and was skipped. Please choose a smaller photo.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = e => {
+      attachedFiles.push({ name: file.name, dataUrl: e.target.result });
+      renderFilePreview();
+    };
+    reader.readAsDataURL(file);
+  });
+  fileInput.value = '';
+});
+
+function renderFilePreview(){
+  filePreview.innerHTML = '';
+  attachedFiles.forEach((f, i) => {
+    const div = document.createElement('div');
+    div.className = 'fp';
+    const isImg = f.dataUrl.startsWith('data:image');
+    div.innerHTML = isImg ? '<img src="'+f.dataUrl+'">' : '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:10px;padding:4px;text-align:center;font-family:\'Space Mono\',monospace;">'+f.name+'</div>';
+    const span = document.createElement('span');
+    span.textContent = '×';
+    span.onclick = () => { attachedFiles.splice(i,1); renderFilePreview(); };
+    div.appendChild(span);
+    filePreview.appendChild(div);
+  });
+}
+
+/* ---------- LEAD STORAGE ---------- */
+const LEADS_KEY = 'maConstructionLeads';
+function getLeads(){
+  try { return JSON.parse(localStorage.getItem(LEADS_KEY)) || []; }
+  catch(e){ return []; }
+}
+function saveLeads(leads){
+  localStorage.setItem(LEADS_KEY, JSON.stringify(leads));
+}
+
+/* ---------- FORM SUBMIT ---------- */
+const leadForm = document.getElementById('leadForm');
+const formStatus = document.getElementById('formStatus');
+
+leadForm.addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const name = document.getElementById('f_name').value.trim();
+  const mobile = document.getElementById('f_mobile').value.trim();
+  const address = document.getElementById('f_address').value.trim();
+  const plot = document.getElementById('f_plot').value.trim();
+  const budget = document.getElementById('f_budget').value.trim();
+  const date = document.getElementById('f_date').value;
+  const notes = document.getElementById('f_notes').value.trim();
+
+  if(!name || !mobile || !address){
+    showStatus('Please fill in your name, mobile number and address.', 'err');
+    return;
+  }
+  if(selectedWork.length === 0){
+    showStatus('Please select at least one type of construction work.', 'err');
+    return;
+  }
+
+  const lead = {
+    id: Date.now(),
+    date: new Date().toLocaleString('en-IN'),
+    name, mobile, address,
+    workType: selectedWork.join(', '),
+    plot, budget,
+    startDate: date,
+    notes,
+    files: attachedFiles.slice()
+  };
+
+  const leads = getLeads();
+  leads.unshift(lead);
+  saveLeads(leads);
+
+  const msgLines = [
+    'New Site Enquiry — MA Construction',
+    'Name: ' + name,
+    'Mobile: ' + mobile,
+    'Address: ' + address,
+    'Work Type: ' + lead.workType,
+    plot ? 'Plot Size: ' + plot : null,
+    budget ? 'Budget: ' + budget : null,
+    date ? 'Preferred Start: ' + date : null,
+    notes ? 'Requirements: ' + notes : null,
+    lead.files.length ? ('Photos attached: ' + lead.files.length + ' (see website admin panel)') : null
+  ].filter(Boolean);
+  const msg = msgLines.join('\n');
+
+  const waUrl = 'https://wa.me/918082168771?text=' + encodeURIComponent(msg);
+  const mailUrl = 'mailto:munaibmushtaq1313@gmail.com?subject=' + encodeURIComponent('New Site Enquiry — ' + name) + '&body=' + encodeURIComponent(msg);
+
+  showStatus('Request saved. Choose WhatsApp or Email below to send it to us now.', 'ok');
+
+  formStatus.innerHTML += '<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">' +
+    '<a href="'+waUrl+'" target="_blank" rel="noopener" class="btn wa" style="padding:9px 14px;">Send via WhatsApp</a>' +
+    '<a href="'+mailUrl+'" class="btn" style="padding:9px 14px;">Send via Email</a></div>';
+
+  leadForm.reset();
+  selectedWork = [];
+  chipWrap.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  attachedFiles = [];
+  renderFilePreview();
+});
+
+function showStatus(text, type){
+  formStatus.className = 'form-status show ' + type;
+  formStatus.innerHTML = text;
+}
+
+/* ---------- ADMIN PANEL ---------- */
+const ADMIN_PASSCODE = 'MACON2026';
+function openAdmin(){
+  document.getElementById('adminOverlay').classList.add('open');
+}
+function closeAdmin(){
+  document.getElementById('adminOverlay').classList.remove('open');
+  document.getElementById('loginView').style.display = 'block';
+  document.getElementById('recordsView').style.display = 'none';
+  document.getElementById('adminPass').value = '';
+}
+function checkAdminPass(){
+  const val = document.getElementById('adminPass').value;
+  if(val === ADMIN_PASSCODE){
+    document.getElementById('loginView').style.display = 'none';
+    document.getElementById('recordsView').style.display = 'block';
+    renderLeadsList();
+  } else {
+    alert('Incorrect passcode.');
+  }
+}
+function renderLeadsList(){
+  const leads = getLeads();
+  document.getElementById('recordCount').textContent = leads.length + ' saved request' + (leads.length===1?'':'s') + ' on this device';
+  const list = document.getElementById('leadsList');
+  if(leads.length === 0){
+    list.innerHTML = '<div class="empty-note">No requests saved on this device yet.</div>';
+    return;
+  }
+  list.innerHTML = leads.map(l => `
+    <div class="lead-card">
+      <div class="top"><b>${escapeHtml(l.name)}</b><span>${escapeHtml(l.date)}</span></div>
+      <div class="grid2">
+        <div><b>Mobile</b> ${escapeHtml(l.mobile)}</div>
+        <div><b>Work Type</b> ${escapeHtml(l.workType)}</div>
+        <div><b>Address</b> ${escapeHtml(l.address)}</div>
+        <div><b>Plot Size</b> ${escapeHtml(l.plot || '—')}</div>
+        <div><b>Budget</b> ${escapeHtml(l.budget || '—')}</div>
+        <div><b>Start Date</b> ${escapeHtml(l.startDate || '—')}</div>
+      </div>
+      ${l.notes ? '<div class="notes">'+escapeHtml(l.notes)+'</div>' : ''}
+      ${l.files && l.files.length ? '<div class="photos">' + l.files.map(f => f.dataUrl.startsWith('data:image') ? `<img src="${f.dataUrl}" onclick="openLightbox('${f.dataUrl}')">` : `<div class="mono" style="font-size:10px;border:1px solid #d6cbac;padding:6px;">${escapeHtml(f.name)}</div>`).join('') + '</div>' : ''}
+      <div class="actions">
+        <a href="https://wa.me/91${l.mobile.replace(/\D/g,'').slice(-10)}" target="_blank" rel="noopener" class="btn wa" style="padding:7px 12px;">WhatsApp Client</a>
+        <button class="del" onclick="deleteLead(${l.id})">Delete</button>
+      </div>
+    </div>
+  `).join('');
+}
+function deleteLead(id){
+  if(!confirm('Delete this saved request?')) return;
+  const leads = getLeads().filter(l => l.id !== id);
+  saveLeads(leads);
+  renderLeadsList();
+}
+function clearAllLeads(){
+  if(!confirm('This will delete ALL saved requests on this device. Continue?')) return;
+  saveLeads([]);
+  renderLeadsList();
+}
+function exportLeadsJSON(){
+  const leads = getLeads();
+  const blob = new Blob([JSON.stringify(leads, null, 2)], {type:'application/json'});
+  downloadBlob(blob, 'ma-construction-requests.json');
+}
+function exportLeadsCSV(){
+  const leads = getLeads();
+  const headers = ['Date','Name','Mobile','Address','WorkType','PlotSize','Budget','StartDate','Notes','PhotoCount'];
+  const rows = leads.map(l => [l.date,l.name,l.mobile,l.address,l.workType,l.plot,l.budget,l.startDate,(l.notes||'').replace(/\n/g,' '),l.files?l.files.length:0]
+    .map(v => '"' + String(v||'').replace(/"/g,'""') + '"').join(','));
+  const csv = [headers.join(',')].concat(rows).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  downloadBlob(blob, 'ma-construction-requests.csv');
+}
+function downloadBlob(blob, filename){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+document.getElementById('adminPass').addEventListener('keydown', e => { if(e.key === 'Enter') checkAdminPass(); });
+</script>
+
+</body>
+</html>
